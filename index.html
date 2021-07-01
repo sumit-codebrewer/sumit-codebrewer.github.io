@@ -392,7 +392,7 @@
 
           <div class="col-lg-5 d-flex align-items-stretch">
             <div class="info">
-              <div class="linkedin">
+              <div class="address">
                 <a href="https://www.linkedin.com/in/sumit-chutani-aab427190/" target="_blank"><i class="bx bxl-linkedin"></i></a>
                 <h4>Linkedin</h4>
                 <p>Sumit Chutani</p>
@@ -404,7 +404,7 @@
                 <p>sumit-codebrewer</p>
               </div>
 
-              <div class="email">
+              <div class="phone">
                 <a href="mailto:sumitchutani50@gmail.com"><i class="bi bi-envelope"></i></a>
                 <h4>Email:</h4>
                 <p>sumitchutani50@gmail.com</p>
@@ -412,8 +412,8 @@
             </div>
           </div>
 
-         <div class="col-lg-7 mt-5 mt-lg-0 d-flex align-items-stretch">
-            <form action="mailto:sumitchutani50@gmail.com" enctype="text/plain" method="post" role="form" class="php-email-form">
+          <div class="col-lg-7 mt-5 mt-lg-0 d-flex align-items-stretch">
+            <form action="forms/contact.php" method="post" role="form" class="php-email-form">
               <div class="row">
                 <div class="form-group col-md-6">
                   <label for="name">Your Name</label>
@@ -432,7 +432,12 @@
                 <label for="name">Message</label>
                 <textarea class="form-control" name="message" rows="10" required></textarea>
               </div>
-              <div class="text-center"><input type="submit"></div>
+              <div class="my-3">
+                <div class="loading">Loading</div>
+                <div class="error-message"></div>
+                <div class="sent-message">Your message has been sent. Thank you!</div>
+              </div>
+              <div class="text-center"><button type="submit">Send Message</button></div>
             </form>
           </div>
 
